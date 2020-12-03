@@ -95,14 +95,19 @@ class _HomePageState extends State<HomePage> {
                 width: (MediaQuery.of(context).size.width - 200.0) / 2,
                 height: 100.0,
                 child: Column(children: <Widget>[
-                  // SizedBox(height: 5.0),
+                  Text(
+                    'I like the way to place items to show more...',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontFamily: 'Montserrat'),
+                  ),
+                  SizedBox(height: 5.0),
                   Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         SizedBox(height: 5.0),
                         Container(
-                          height: 30.0,
-                          width: 30.0,
+                          height: 25.0,
+                          width: 25.0,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(25.0),
                               image: DecorationImage(
@@ -110,7 +115,7 @@ class _HomePageState extends State<HomePage> {
                                   fit: BoxFit.cover)),
                         ),
                         Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: <Widget>[
                             Text(
                               'Vicent',
@@ -125,6 +130,7 @@ class _HomePageState extends State<HomePage> {
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                   fontFamily: 'Objectivity',
+                                  fontSize: 10.0,
                                   color: Colors.grey),
                             ),
                           ],
@@ -136,14 +142,19 @@ class _HomePageState extends State<HomePage> {
                 width: (MediaQuery.of(context).size.width - 200.0) / 2,
                 height: 100.0,
                 child: Column(children: <Widget>[
-                  // SizedBox(height: 5.0),
+                  Text(
+                    'I like the way to place items to show more...',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontFamily: 'Montserrat'),
+                  ),
+                  SizedBox(height: 5.0),
                   Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         SizedBox(height: 5.0),
                         Container(
-                          height: 30.0,
-                          width: 30.0,
+                          height: 25.0,
+                          width: 25.0,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(25.0),
                               image: DecorationImage(
@@ -151,7 +162,7 @@ class _HomePageState extends State<HomePage> {
                                   fit: BoxFit.cover)),
                         ),
                         Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: <Widget>[
                             Text(
                               'Mona',
@@ -166,6 +177,7 @@ class _HomePageState extends State<HomePage> {
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                   fontFamily: 'Objectivity',
+                                  fontSize: 10.0,
                                   color: Colors.grey),
                             ),
                           ],
@@ -186,14 +198,19 @@ class _HomePageState extends State<HomePage> {
                 width: (MediaQuery.of(context).size.width - 200.0) / 2,
                 height: 100.0,
                 child: Column(children: <Widget>[
-                  // SizedBox(height: 5.0),
+                  Text(
+                    'I like the way to place items to show more...',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontFamily: 'Montserrat'),
+                  ),
+                  SizedBox(height: 5.0),
                   Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         SizedBox(height: 5.0),
                         Container(
-                          height: 30.0,
-                          width: 30.0,
+                          height: 25.0,
+                          width: 25.0,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(25.0),
                               image: DecorationImage(
@@ -201,7 +218,7 @@ class _HomePageState extends State<HomePage> {
                                   fit: BoxFit.cover)),
                         ),
                         Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: <Widget>[
                             Text(
                               'Bettie',
@@ -216,6 +233,7 @@ class _HomePageState extends State<HomePage> {
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                   fontFamily: 'Objectivity',
+                                  fontSize: 10.0,
                                   color: Colors.grey),
                             ),
                           ],
@@ -227,14 +245,19 @@ class _HomePageState extends State<HomePage> {
                 width: (MediaQuery.of(context).size.width - 200.0) / 2,
                 height: 100.0,
                 child: Column(children: <Widget>[
-                  // SizedBox(height: 5.0),
+                  Text(
+                    'I like the way to place items to show more...',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontFamily: 'Montserrat'),
+                  ),
+                  SizedBox(height: 5.0),
                   Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         SizedBox(height: 5.0),
                         Container(
-                          height: 30.0,
-                          width: 30.0,
+                          height: 25.0,
+                          width: 25.0,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(25.0),
                               image: DecorationImage(
@@ -257,6 +280,7 @@ class _HomePageState extends State<HomePage> {
                               textAlign: TextAlign.left,
                               style: TextStyle(
                                   fontFamily: 'Objectivity',
+                                  fontSize: 10.0,
                                   color: Colors.grey),
                             ),
                           ],
@@ -279,7 +303,7 @@ class _HomePageState extends State<HomePage> {
             child: Container(
               height: 250.0,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(25.0),
+                  borderRadius: BorderRadius.circular(15.0),
                   image: DecorationImage(
                       image: AssetImage(imgPath1), fit: BoxFit.cover)),
             ),
@@ -293,7 +317,7 @@ class _HomePageState extends State<HomePage> {
                 Container(
                   height: 250.0,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(25.0),
+                      borderRadius: BorderRadius.circular(15.0),
                       image: DecorationImage(
                           image: AssetImage(imgPath2), fit: BoxFit.cover)),
                 ),
