@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:vee_app/views/menu.dart';
 import 'package:vee_app/widget/widget.dart';
 
 class HomePage extends StatefulWidget {
@@ -18,7 +19,14 @@ class _HomePageState extends State<HomePage> {
             icon: Icon(Icons.menu),
             color: Colors.black,
             iconSize: 17.0,
-            onPressed: () {},
+            onPressed: () => {
+              // Navigator.push(
+              //     context,
+              //     MaterialPageRoute(
+              //       builder: (context) => MenuPage(),
+              //     ))
+              menu(context)
+            },
           ),
           actions: <Widget>[
             IconButton(
@@ -353,4 +361,39 @@ class _HomePageState extends State<HomePage> {
       ],
     );
   }
+}
+
+Widget menu(context) {
+  return Padding(
+    padding: const EdgeInsets.only(left: 16.0),
+    child: Align(
+      alignment: Alignment.centerLeft,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            "Profile",
+            style: TextStyle(color: Colors.white, fontSize: 20.0),
+          ),
+          SizedBox(height: 10),
+          Text(
+            "Messages",
+            style: TextStyle(color: Colors.white, fontSize: 20.0),
+          ),
+          SizedBox(height: 10),
+          Text(
+            "Notifications",
+            style: TextStyle(color: Colors.white, fontSize: 20.0),
+          ),
+          SizedBox(height: 10),
+          Text(
+            "Settings",
+            style: TextStyle(color: Colors.white, fontSize: 20.0),
+          )
+        ],
+      ),
+    ),
+  );
 }
