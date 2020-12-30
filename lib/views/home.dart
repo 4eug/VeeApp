@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:vee_app/views/menu.dart';
-import 'package:vee_app/widget/widget.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -11,86 +9,60 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          elevation: 0.0,
-          title: brandName(),
-          leading: IconButton(
-            icon: Icon(Icons.menu),
-            color: Colors.black,
-            iconSize: 17.0,
-            onPressed: () => {
-              // Navigator.push(
-              //     context,
-              //     MaterialPageRoute(
-              //       builder: (context) => MenuPage(),
-              //     ))
-              menu(context)
-            },
-          ),
-          actions: <Widget>[
-            IconButton(
-              icon: Icon(Icons.search),
-              color: Colors.black,
-              iconSize: 17.0,
-              onPressed: () {},
-            ),
-          ],
-        ),
         body: ListView(
-          padding: EdgeInsets.only(top: 15.0, bottom: 15.0),
-          children: <Widget>[
-            Container(
-              height: 125.0,
-              width: double.infinity,
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                padding: EdgeInsets.all(10.0),
+      padding: EdgeInsets.only(top: 15.0, bottom: 15.0),
+      children: <Widget>[
+        Container(
+          height: 125.0,
+          width: double.infinity,
+          child: ListView(
+            scrollDirection: Axis.horizontal,
+            padding: EdgeInsets.all(10.0),
+            children: <Widget>[
+              Column(
                 children: <Widget>[
-                  Column(
-                    children: <Widget>[
-                      Container(
-                          height: 70.0,
-                          width: 70.0,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(35.0),
-                              color: Colors.black),
-                          child: IconButton(
-                            icon: Icon(Icons.add),
-                            color: Colors.white,
-                            onPressed: () {},
-                          )),
-                      SizedBox(height: 7.0),
-                      Text('Your story',
-                          style: TextStyle(
-                              fontFamily: 'Objectivity',
-                              fontSize: 14.0,
-                              fontWeight: FontWeight.w600))
-                    ],
-                  ),
-                  SizedBox(width: 25.0),
-                  listItem('images/anna.jpg', 'Anna', true),
-                  SizedBox(width: 25.0),
-                  listItem('images/benard.jpg', 'Benard', false),
-                  SizedBox(width: 25.0),
-                  listItem('images/kathie.jpg', 'Kathie', false),
-                  SizedBox(width: 25.0),
-                  listItem('images/raud.jpg', 'Raud', false),
+                  Container(
+                      height: 70.0,
+                      width: 70.0,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(35.0),
+                          color: Colors.black),
+                      child: IconButton(
+                        icon: Icon(Icons.add),
+                        color: Colors.white,
+                        onPressed: () {},
+                      )),
+                  SizedBox(height: 7.0),
+                  Text('Your story',
+                      style: TextStyle(
+                          fontFamily: 'Objectivity',
+                          fontSize: 14.0,
+                          fontWeight: FontWeight.w600))
                 ],
               ),
-            ),
-            SizedBox(height: 1.0),
-            firstStyleRow('images/picture4.jpg', 'images/picture3.jpg',
-                'images/bettie.jpg'),
-            SizedBox(height: 1.0),
-            infoRow(),
-            SizedBox(height: 1.0),
-            firstStyleRow('images/picture1.jpg', 'images/picture5.jpg',
-                'images/bettie.jpg'),
-            SizedBox(height: 1.0),
-            infoRow2(),
-          ],
-        ));
+              SizedBox(width: 25.0),
+              listItem('images/anna.jpg', 'Anna', true),
+              SizedBox(width: 25.0),
+              listItem('images/benard.jpg', 'Benard', false),
+              SizedBox(width: 25.0),
+              listItem('images/kathie.jpg', 'Kathie', false),
+              SizedBox(width: 25.0),
+              listItem('images/raud.jpg', 'Raud', false),
+            ],
+          ),
+        ),
+        SizedBox(height: 1.0),
+        firstStyleRow(
+            'images/picture4.jpg', 'images/picture3.jpg', 'images/bettie.jpg'),
+        SizedBox(height: 1.0),
+        infoRow(),
+        SizedBox(height: 1.0),
+        firstStyleRow(
+            'images/picture1.jpg', 'images/picture5.jpg', 'images/bettie.jpg'),
+        SizedBox(height: 1.0),
+        infoRow2(),
+      ],
+    ));
   }
 
   Widget infoRow() {

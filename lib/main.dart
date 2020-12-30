@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vee_app/views/home.dart';
+import 'package:vee_app/views/menu_drawer.dart';
 
 void main() => runApp(MyApp());
 
@@ -7,12 +7,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'VeeApp',
+      title: 'Flutter Demo',
       theme: ThemeData(
-        primaryColor: Colors.white,
+        primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: MenuDrawer(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
