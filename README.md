@@ -8,4 +8,6 @@ UI Designed by Me
 
 ## Preview On Device
 
+After Cloning it on Screen
+
 <img src="images/Screens/Screenshot2.jpg" height="500em" /> <img src="images/Screens/Screenshot1.jpg" height="500em" />
